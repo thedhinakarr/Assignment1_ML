@@ -5,63 +5,8 @@
 My custom CNN architecture for CIFAR-100 image classification features 6 convolutional layers organized into 3 blocks, followed by global average pooling and fully connected layers for classification. The design follows modern CNN best practices while maintaining reasonable computational requirements.
 
 ## Network Structure Diagram
-Input (32x32x3)
-│
-▼
-┌─────────────────┐
-│ Block 1         │
-│ Conv2D (3→64)   │
-│ BatchNorm       │
-│ ReLU            │
-│ Conv2D (64→64)  │
-│ BatchNorm       │
-│ ReLU            │
-│ MaxPool (2×2)   │
-│ Dropout (0.25)  │
-└─────────────────┘
-│
-▼
-┌─────────────────┐
-│ Block 2         │
-│ Conv2D (64→128) │
-│ BatchNorm       │
-│ ReLU            │
-│ Conv2D (128→128)│
-│ BatchNorm       │
-│ ReLU            │
-│ MaxPool (2×2)   │
-│ Dropout (0.25)  │
-└─────────────────┘
-│
-▼
-┌─────────────────┐
-│ Block 3         │
-│ Conv2D (128→256)│
-│ BatchNorm       │
-│ ReLU            │
-│ Conv2D (256→256)│
-│ BatchNorm       │
-│ ReLU            │
-│ MaxPool (2×2)   │
-│ Dropout (0.25)  │
-└─────────────────┘
-│
-▼
-┌─────────────────┐
-│ Global Avg Pool │
-└─────────────────┘
-│
-▼
-┌─────────────────┐
-│ FC (256→512)    │
-│ BatchNorm       │
-│ ReLU            │
-│ Dropout (0.5)   │
-│ FC (512→100)    │
-└─────────────────┘
-│
-▼
-Output (100 classes)
+![Custom CNN Architecture](../Results/CustomCNN_architecture.png)
+
 
 ## Design Rationale
 
