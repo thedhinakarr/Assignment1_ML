@@ -8,3 +8,7 @@ This repository contains the implementation and analysis for Assignment 1, which
 ## Directory Structure
 - Question_1/: All files related to Question 1 of assignment
 - Question_2/: All files related to Question 2 of assignment
+- 
+## GitHub Repository
+For a more comprehensive view of the project with all files and documentation, please visit the GitHub repository:
+[View on GitHub](https://github.com/thedhinakarr/Assignment1_ML)
